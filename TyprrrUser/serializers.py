@@ -31,5 +31,5 @@ class RegisterUserSerializer(serializers.ModelSerializer):
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = TyprrrUser
-        fields = ('id', 'username', 'email', 'created', 'races_completed', 'average_speed', 'races_won')
+        fields = ('id', 'username', 'email', 'created', 'races_completed', 'average_speed', 'races_won', 'best_speed')
 
