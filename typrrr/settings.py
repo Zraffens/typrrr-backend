@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsPostCsrfMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -67,7 +68,6 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:8080',
   'https://typrrr-backend.vercel.app'
 )
-
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
   'https://typrrr-backend.vercel.app'
