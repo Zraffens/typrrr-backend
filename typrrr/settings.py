@@ -65,10 +65,12 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = (
   'http://localhost:8080',
+  'https://typrrr-backend.vercel.app'
 )
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8080'
+    'http://localhost:8080',
+  'https://typrrr-backend.vercel.app'
 ]
 
 ROOT_URLCONF = 'typrrr.urls'
